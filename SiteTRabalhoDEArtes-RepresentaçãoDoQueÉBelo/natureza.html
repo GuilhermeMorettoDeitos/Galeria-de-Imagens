@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container3">
+        <h1>Natureza com Céu Nublado</h1>
+        <div class="gallery">
+            <img src="imagens/natureza1.jpg" alt="Natureza 1">
+            <img src="imagens/natureza2.jpg" alt="Natureza 2">
+            <img src="imagens/natureza3.jpg" alt="Natureza 3">
+            <img src="imagens/natureza4.jpg" alt="Natureza 4">
+            <img src="imagens/natureza5.jpg" alt="Natureza 5">
+            <img src="imagens/natureza6.jpg" alt="Natureza 6">
+            <img src="imagens/natureza7.jpg" alt="Natureza 7">
+            <img src="imagens/natureza8.jpg" alt="Natureza 8">
+            <img src="imagens/natureza9.jpg" alt="Natureza 9">
+        </div>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+    <button3 id="scrollToBottomBtn" onclick="scrollToBottom()">
+        ↓
+    </butto3>
+
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+</body>
+</html>

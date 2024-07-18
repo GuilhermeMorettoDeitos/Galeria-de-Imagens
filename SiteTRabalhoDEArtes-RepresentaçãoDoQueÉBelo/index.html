@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="gallery">
+        <img src="imagens/gifIni1.gif" alt="Gif 1">
+    </div>
+    <div class="container">
+        <h1>Galeria de Imagens que Representam a Beleza</h1>
+    </div>
+    <div class="container5">
+        <button onclick="window.location.href='superesportivos.html'">Carros Superesportivos de Luxo</button>
+        <button onclick="window.location.href='formula1.html'">Carros de Fórmula 1</button>
+        <button onclick="window.location.href='natureza.html'">Natureza</button>
+        <button onclick="window.location.href='avaliacoes.html'"><i class="fas fa-star"></i> Avaliações</button>
+        <button id="qrcode-button"><i class="fas fa-qrcode"></i> Gerar QR Code</button>
+    
+        <div id="qrcode-container">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+   
+    <div class="container4">
+        <h3>Disciplina: Artes</h3>
+        <h3>Professora: Marijane</h3>
+        <h2>Guilherme Moretto Deitos, 2024</h2>
+
+        <footer>
+            <p>© 2024 Guilherme Moretto Deitos. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+<script>
+    // URL do site que será transformada em QR Code
+    const siteUrl = window.location.href;
+
+    // Função para gerar o QR Code
+    function generateQRCode(url) {
+        const qrCodeElement = document.getElementById('qrcode');
+        qrCodeElement.innerHTML = ""; // Limpa o conteúdo anterior
+        new QRCode(qrCodeElement, {
+            text: url,
+            width: 300,
+            height: 300,
+            colorDark: "#333",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    }
+
+    // Função para alternar a visibilidade do QR Code
+    function toggleQRCode() {
+        const qrCodeElement = document.getElementById('qrcode-container');
+        if (qrCodeElement.style.display === "none" || qrCodeElement.style.display === "") {
+            generateQRCode(siteUrl);
+            qrCodeElement.style.display = "block";
+        } else {
+            qrCodeElement.style.display = "none";
+        }
+    }
+
+    // Adiciona um evento de clique ao botão
+    document.getElementById('qrcode-button').addEventListener('click', toggleQRCode);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros de Fórmula 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container3">
+        <h1>Fórmula 1</h1>
+        <div class="gallery">
+            <img src="imagens/f1carro1.jpg" alt="F1 Carro 1">
+            <img src="imagens/f1carro2.jpg" alt="F1 Carro 2">
+            <img src="imagens/f1carro3.jpg" alt="F1 Carro 3">
+            <img src="imagens/f1carro4.jpg" alt="F1 Carro 4">
+            <img src="imagens/f1carro5.jpg" alt="F1 Carro 5">
+            <img src="imagens/f1carro6.jpg" alt="F1 Carro 6">
+            <img src="imagens/f1carro7.jpg" alt="F1 Carro 7">
+            <img src="imagens/f1carro8.jpg" alt="F1 Carro 8">
+            <img src="imagens/f1carro9.jpg" alt="F1 Carro 9">
+        </div>
+        <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+    <button3 id="scrollToBottomBtn" onclick="scrollToBottom()">
+        ↓
+    </butto3>
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Superesportivos de Luxo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container3">
+        <h2>Carros Superesportivos de Luxo</h2>
+        <div class="gallery">
+            <img src="imagens/superesportivos1.jpg" alt="Superesportivo 1">
+            <img src="imagens/superesportivos2.jpg" alt="Superesportivo 2">
+            <img src="imagens/superesportivos3.jpg" alt="Superesportivo 3">
+            <img src="imagens/superesportivos4.jpg" alt="Superesportivo 4">
+            <img src="imagens/superesportivos5.jpg" alt="Superesportivo 5">
+            <img src="imagens/superesportivos6.jpg" alt="Superesportivo 6">
+            <img src="imagens/superesportivos7.jpg" alt="Superesportivo 7">
+            <img src="imagens/superesportivos8.jpg" alt="Superesportivo 8">
+            <img src="imagens/superesportivos9.jpg" alt="Superesportivo 9">
+        </div>
+        <button onclick="window.location.href='index.html'">Voltar ao menu</button>
+    </div>
+    <button3 id="scrollToBottomBtn" onclick="scrollToBottom()">
+        ↓
+    </butto3>
+
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
