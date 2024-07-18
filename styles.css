@@ -57,7 +57,7 @@ body {
 
 .container5 {
     text-align: center;
-    margin: -20px auto;
+    margin: 20px auto;
     max-width: 800px;
     padding: 20px;
     background-color: #fff;
@@ -188,4 +188,15 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: #ffdd57;
+}
+
+#Cabecalho {
+    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 845px; /* Define uma largura máxima para a imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    border: 2px solid #ccc; /* Adiciona uma borda à imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à imagem */
+    border-radius: 30px; /* Adiciona bordas arredondadas */
 }
