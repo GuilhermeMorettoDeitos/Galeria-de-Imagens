@@ -97,6 +97,7 @@ button {
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 button i {
@@ -115,6 +116,7 @@ button i {
 
 button:hover {
     background-color: #00FFFF;
+    transform: scale(1.05);
 }
 
 .gallery {
