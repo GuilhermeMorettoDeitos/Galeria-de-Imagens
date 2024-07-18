@@ -193,12 +193,12 @@ footer .social-icons a:hover {
 }
 
 #Cabecalho {
-    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 845px; /* Define uma largura máxima para a imagem */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    display: block; /* Garante que a imagem seja tratada como um bloco */
-    border: 2px solid #ccc; /* Adiciona uma borda à imagem */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à imagem */
-    border-radius: 30px; /* Adiciona bordas arredondadas */
+    width: 100%; 
+    height: auto; 
+    max-width: 845px; 
+    margin: 0 auto; 
+    display: block; 
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px; 
 }
