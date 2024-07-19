@@ -37,7 +37,7 @@ body {
 
 .container3 {
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
     max-width: 800px;
     padding: 20px;
     background-color: #fff;
@@ -196,6 +196,17 @@ footer .social-icons a:hover {
     height: auto; 
     max-width: 845px; 
     margin: 0 auto; 
+    display: block; 
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px; 
+}
+
+#Cabecalho2 {
+    width: 100%; 
+    height: auto; 
+    max-width: 845px; 
+    margin: 20px auto; 
     display: block; 
     border: 2px solid #ccc; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
