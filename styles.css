@@ -19,6 +19,7 @@ body {
     margin-left: 20px auto;
     margin-right: 100px auto;
     max-width: 800px;
+    max-height: 2001px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,8 +48,8 @@ body {
 
 .container4 {
     text-align: center;
-    margin: 30px auto;
-    margin-bottom: 100px;
+    margin: 25px auto;
+    margin-bottom: 120px;
     max-width: 800px;
     padding: 20px;
     background-color: #fff;
@@ -165,6 +166,7 @@ button:hover {
 @media (max-width: 768px) {
     .container {
         width: 90%;
+        height: 100%;
     }
 
     button {
@@ -231,4 +233,21 @@ footer a:hover {
     border: 2px solid #ccc; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 30px; 
+}
+
+.form-container {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 100%;
+    max-width: 3600px; /* Largura máxima para telas menores */
+    height: 1801px;
+    border: none;
+}
+@media (min-width: 768px) {
+    iframe {
+        max-width: 100%;
+    }
 }
