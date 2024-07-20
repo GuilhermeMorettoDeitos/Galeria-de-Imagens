@@ -115,6 +115,12 @@ button i {
     display: inline-block;
 }
 
+#qrcode-button {
+    display: none; /* Ocultar por padrão */
+    align-items: center;
+    justify-content: center;
+}
+
 button:hover {
     background-color: #00FFFF;
     transform: scale(1.05);

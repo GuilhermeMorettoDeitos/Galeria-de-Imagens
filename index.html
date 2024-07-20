@@ -72,6 +72,29 @@
 
     // Adiciona um evento de clique ao botão
     document.getElementById('qrcode-button').addEventListener('click', toggleQRCode);
+    
+    //função para testar se o botão qrcode vai aparecer
+    function showOrHideQRCodeButton() {
+            const qrCodeButton = document.getElementById('qrcode-button');
+            if (window.innerWidth >= 1024) {
+                qrCodeButton.style.display = 'block';
+            } else {
+                qrCodeButton.style.display = 'none';
+            }
+        }
+        showOrHideQRCodeButton();
+
+        // Adicionar evento para redimensionamento da janela
+        window.addEventListener('resize', showOrHideQRCodeButton);
+
+        function loadContent(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('dynamic-content').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar conteúdo:', error));
+        }
 </script>
 
 </body>
