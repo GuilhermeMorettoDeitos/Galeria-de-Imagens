@@ -19,5 +19,17 @@
 
         <button onclick="window.location.href='index.html'"><i class="fas fa-arrow-left"></i> Voltar</button>
     </div>
+
+    <script>
+        function resizeIframe(iframe) {
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+
+        window.addEventListener('resize', function() {
+            const iframe = document.getElementById('google-form');
+            resizeIframe(iframe);
+        });
+    </script>
+    
 </body>
 </html>

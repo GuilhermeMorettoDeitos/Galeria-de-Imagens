@@ -1,4 +1,4 @@
-# 🌟 Galeria de Imagens 🌟
+# 🌟 Galeria de Imagens
 
 Bem-vindo à **Galeria de Imagens**, um projeto dedicado a mostrar a beleza de diferentes temas através de imagens. Este site apresenta uma coleção de imagens que representam a beleza de carros superesportivos, natureza e carros de Fórmula 1. Navegue pelas diferentes seções e desfrute das vistas maravilhosas que cada tema tem a oferecer.
 

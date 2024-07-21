@@ -3,7 +3,6 @@ body {
     background-color: #f0f0f0;
     background-image: url('imagens/background.jpg');
     background-size: cover;
-    
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -19,7 +18,7 @@ body {
     margin-left: 20px auto;
     margin-right: 100px auto;
     max-width: 800px;
-    max-height: 2001px;
+    max-height: 2901px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -173,6 +172,7 @@ button:hover {
     .container {
         width: 90%;
         height: 100%;
+        max-height: 2900px;
     }
 
     button {
@@ -244,16 +244,20 @@ footer a:hover {
 .form-container {
     padding: 20px;
     box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 iframe {
     width: 100%;
     max-width: 3600px; /* Largura máxima para telas menores */
-    height: 1801px;
+    height: 2190px;
     border: none;
 }
 @media (min-width: 768px) {
     iframe {
         max-width: 100%;
+        max-height: 100%;
+        height: 1975px;
     }
 }
